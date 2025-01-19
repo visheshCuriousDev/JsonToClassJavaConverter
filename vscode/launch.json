@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Extension",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/out/extension.js",  // Use compiled JavaScript file
+      "runtimeExecutable": "node",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

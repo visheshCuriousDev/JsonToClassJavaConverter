@@ -1,0 +1,39 @@
+{
+  "name": "json-generator",
+  "displayName": "JSON Generator",
+  "description": "Generates sample JSON from DTO using faker, and generates DTO from JSON.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.generateJsonFromDto",
+    "onCommand:extension.generateClassFromJson"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.generateJsonFromDto",
+        "title": "Generate JSON from DTO"
+      },
+      {
+        "command": "extension.generateClassFromJson",
+        "title": "Generate Class from JSON"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "vscode": "^1.1.37"
+  }
+}

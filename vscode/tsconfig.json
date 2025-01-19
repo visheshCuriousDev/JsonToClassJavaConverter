@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                         // or ES5, depending on your compatibility needs
+    "module": "CommonJS",                    // VSCode extensions use CommonJS modules
+    "outDir": "./out",                       // Directory where transpiled JavaScript will go
+    "rootDir": "./src",                      // Root directory for TypeScript files
+    "strict": true,                          // Enable strict type-checking options
+    "esModuleInterop": true,                  // Ensures compatibility between CommonJS and ESModules
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts"                            // Include all TypeScript files in the src folder
+  ],
+  "exclude": [
+    "node_modules"                           // Exclude node_modules
+  ]
+}
